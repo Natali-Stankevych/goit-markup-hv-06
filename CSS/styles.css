@@ -728,6 +728,8 @@ border: 1px solid var(--border-hed-cl);
 
 .modal {
     position: absolute;
+      display: block;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -777,9 +779,8 @@ border: 1px solid var(--border-hed-cl);
 
 
 .register-form-title { 
-    display: flex;
-    text-align:center;
-    justify-content: center;
+    display: block;
+    text-align: center;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(24/16);
@@ -793,72 +794,79 @@ line-height: calc(14/12) ;
 letter-spacing: 0.01em;
 text-align: left;
 color:var(--form-txt-cl);
-margin-bottom: 4px;
+padding-bottom: 4px;
 
 }
-.modal-group{
+
+.modal-group {
     position: relative;
-    margin-top: 4px;
-    
-}
-.modal-icon{
- position: absolute;
- top: 11px;
- left: 12px;
- color: currentColor;
-
-
-}
-.input{
- cursor: pointer;
-width: 360px;
-height: 40px;
-padding: 0;
-font: inherit;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-margin-bottom: 8px;
-transition:  border var(--animation);
+    display: block;
+     text-align: start;
+    margin-bottom: 8px;
 
 }
 
-.input:hover,
-.input:focus,
-.textarea-modal:hover,
-.textarea-modal:focus{
- border: 1px solid var(--blue-bg-cl);
-  
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    color: currentColor;
 }
 
-.input:hover +.modal-icon,
-.input:focus +.modal-icon {
-fill: var(--blue-bg-cl);
+.input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font: inherit;
+    outline: transparent;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border var(--animation);
+}
+   .input:focus{
+            border: 1px solid var(--blue-bg-cl);
+        }
+
+
+
+.input:focus+.modal-icon {
+    fill: var(--blue-bg-cl);
 }
 
-
-
-
-.textarea-modal{
-width: 360px;
-height: 120px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-margin-bottom: 16px;
-padding: 0;
-transition:  border var(--animation);
-
-}
-.textarea-modal::placeholder{
-font-size: 12px;
-line-height: calc(16/12) ;
-letter-spacing: 0.04em;
-color: rgba(117, 117, 117, 0.5);
+.label-group{
+     position: relative;
+    display: block;
+     text-align: start;
+     margin-bottom: 16px;
 }
 
-.btn-group{
-text-align: center;
-margin-top: 24px;
+.label-textarea {
+    display: block;
+    margin-bottom: 20px;
 }
+
+.textarea-modal {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 15px;
+    resize: none;
+    outline: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border var(--animation);
+
+}
+
+   .textarea-modal:focus {
+            border: 1px solid var(--blue-bg-cl);
+        }
+
+
+
+
+
 .btn-modal{
 font-family:inherit;
 font-size: 16px;
@@ -879,12 +887,19 @@ border-radius: 4px;
     display: block;
     width: 100%;
     height: 120px;
-    padding: 12px 15px;
+    padding: 12px 16px;
     resize: none;
     outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border var(--animation);
+}
+.textarea-modal::placeholde {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: var(--texteria-txt-cl);
+
 }
 
 .label-group-checkbox {
@@ -892,14 +907,14 @@ border-radius: 4px;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 .checkbox-text{
     font-size: 12px;
-line-height: calc(14/12) ;
-letter-spacing: 0.01em;
+line-height: calc(16/12) ;
+letter-spacing: 0.04em;
 text-align: left;
-color:var(--form-txt-cl);
+color:var(--texteria-txt-cl);
 }
 
 .group-text-checkbox {

@@ -346,6 +346,8 @@
       </div>
     </section>
   </main>
+
+
   <footer class="footer">
     <div class="contanier footer-contanier ">
       <div class="footer-cont">
@@ -388,17 +390,17 @@
         </div>
          <form class="register-form-Footer" name="register-form-Footer">
       <strong class="register-Footer-title">Subscribe</strong>
-      <label class="lebel-footer">
+      <div class="lebel-footer">
+      <label >
       <input class="input-footer" type="email" name=""placeholder="  E-mail" >
+</label>
       <button class="btn-modal-footer" type="submit">Subscribe
         <svg class="svg-btn" width="24" height="24">
           <use href="./img/icons.svg#icon-send"></use>
         </svg>
-        </div>
       </button>
-    </label>
+    </div>
     </form>
-      </div>
     </div>
   </footer>
 
@@ -413,51 +415,44 @@
                 <form class="register-form" name="register-form">
               <strong class="register-form-title">Leave your contacts and we will call you back</strong>
               <div class="register-form-group" role="group">
+               <label class="modal-group">
                 <span class="group-text">Name</span>
-                <div class="modal-group">
-                  
                   <input class="input" type="text" name="user-name" placeholder="">
-                  <label class="modal-icon" >
-                    <svg width="18" height="18">
+                    <svg class="modal-icon" width="18" height="18">
                   <use href="./img/icons.svg#person-blac"></use>
                 </svg>
                 </label>
-                 </div>
 
+                <label class="modal-group" >
                   <span class="group-text">Phone</span>
-                  <div class="modal-group">
                   <input class="input" type="tel" name="tel">
-                   <label class="modal-icon" >
-                    <svg width="18" height="18">
+                    <svg class="modal-icon" width="18" height="18">
                   <use href="./img/icons.svg#phone-black"></use>
                 </svg>
                 </label>
-                  </div>
+
+                  <label class="modal-group">
                   <span class="group-text">Email</span>
-                   <div class="modal-group">
-                  <input class="input" type="email" name="email" placeholder="  ">
-                  <label class="modal-icon" >
-                    <svg width="18" height="18">
+                  <input class="input" type="email" name="email" >
+                    <svg class="modal-icon" width="18" height="18">
                   <use href="./img/icons.svg#email-black"></use>
                 </svg>
-                </label>                
-                 </div>
+                </label> 
+                 
                 <label class="label-group">
                   <span class="group-text">Comment</span>
                   <textarea class="textarea-modal" name="" id="" rows="5" placeholder=" Text input"></textarea>
                 </label>
-              </div>
-              <label class="label-group-checkbox">
-                  <input class="checkbox-group visually-hidden " type="checkbox" name="">
+            <label class="label-group-checkbox">
+                <input class="checkbox-group visually-hidden " type="checkbox" name="">
                 <svg class="checkbox-check-icon" width="16" height="15">
                   <use class="check-icon" href="./img/icons.svg#icon-check"></use>
                   <use class="notcheck-icon" href="./img/icons.svg#icon-notcheck"></use>
                 </svg>
                 <span class="checkbox-text">I accept the terms and conditions of the <a href="" class="link-modal">Privacy Policy</a></span>
-              </label>
-              <div class="btn-group">
-              <button class="btn-modal" type="submit">Send</button>
+                </label>
               </div>
+              <button class="btn-modal" type="submit">Send</button>
             </form>
           </div>
         </div>
